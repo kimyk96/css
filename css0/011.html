@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>011</title>
+		<style>
+			#page {
+				width: 100%;
+			}
+			#page div {
+				width: 70px;
+				height: 70px;
+				background-color: #303030;
+				color: #ffffff;
+			}
+			.b1 {
+				position: relative;
+				top: 000px;
+				left: 000px;
+			}
+			.b2 {
+				position: absolute;
+				top: 85px;
+				left: 100px;
+			}
+			.b3 {
+				position: fixed;
+				top: 85px;
+				left: 195px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>position</h1>
+		<!--
+            position : static   { 위>아래, 좌>우 }
+            position : relative { 현재 자신의 위치 기준으로 좌표만큼 이동, (원래 자리의 빈공간은 냅둠) }
+            position : absolute { 웹페이지 화면 왼쪽 상단 기준 이동 ( 원래 자리의 빈공간은 채움 ) }
+            position : fixed    { 모니터 화면 왼쪽 상단 기준 이동 ( 원래 자리의 빈공간은 채움 ) }
+
+            이동할 요소는 absolute, 이동할 요소의 부모는 relative
+            absolute는 static 이 아닌 부모 기준으로 이동한다
+            부모가 static이면 조부모 > 증조부모  순으로  static이 아닌 요소를 찾는다
+            static이 아닌 조상이 없으면 화면 기준으로 이동한다. > fixed처럼 행동하는 듯
+        -->
+		<div id="page">
+			<div class="b1">relative</div>
+
+			<div class="b2">absolute</div>
+
+			<div class="b3">fixed</div>
+		</div>
+	</body>
+</html>

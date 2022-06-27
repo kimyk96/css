@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>014 - fontAwesome</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<style>
+			body {
+				margin: 0 auto;
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			div {
+				border: 1px solid #909090;
+				color: #909090;
+				padding: 7px 14px;
+				border-radius: 50px;
+				line-height: 20px;
+			}
+			input {
+				border: none;
+				height: 20px;
+			}
+			input:focus {
+				outline: none;
+			}
+			i.fa-keyboard-o {
+				padding: 0 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div onclick="document.getElementById('search').focus();">
+			<i class="fa fa-search"></i>
+			<input type="text" id="search" />
+			<i class="fa fa-keyboard-o"></i>
+			<i class="fa fa-microphone"></i>
+		</div>
+	</body>
+</html>
