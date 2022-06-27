@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotify</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<style>
+			footer {
+				width: 100%;
+				height: 532px;
+				padding: 80px 0;
+				background-color: #000000;
+				color: #ffffff;
+			}
+			footer a {
+				color: #ffffff;
+				text-decoration: none;
+			}
+			footer a:visited {
+				color: #ffffff;
+			}
+			footer a:hover {
+				color: #1ed760;
+			}
+			footer i {
+				color: #ffffff;
+			}
+			footer div.wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			footer div.wrapper > div {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+			footer div.wrapper > div:nth-child(1) {
+				height: 346px;
+			}
+			footer div.wrapper > div:nth-child(2) {
+				flex-direction: column;
+				color: #919496;
+				font-size: 12px;
+			}
+			footer div.wrapper > div:nth-child(2) i {
+				color: #919496;
+			}
+			footer div.wrapper > div:nth-child(2) a {
+				color: #919496;
+                padding : 0 12px;
+			}
+            footer div.wrapper > div:nth-child(2) > div {
+                text-align :right;
+                width : 100%;
+                height : 40px;
+                display : flex; 
+                align-items: center;
+                
+            }
+            footer div.wrapper > div:nth-child(2) > div:nth-child(1){
+                justify-content: right;
+            }
+            footer div.wrapper > div:nth-child(2) > div:nth-child(2) {
+                display : flex;
+                justify-content: space-between;
+            }
+			footer div.wrapper div.logo {
+				width: 195px;
+				justify-content: left;
+			}
+			footer div.wrapper div#footer_menu {
+				display: flex;
+			}
+			footer div.wrapper div#footer_menu dl {
+				width: 195px;
+				padding: 0 15px;
+			}
+			footer div.wrapper div#footer_menu dl dt {
+				margin: 20px 0;
+				color: #919496;
+				font-size: 12px;
+			}
+			footer div.wrapper div#footer_menu dl dd {
+				height: 42px;
+				font-size: 16px;
+			}
+			footer div.wrapper div#footer_sns {
+				display: flex;
+				color: #ffffff;
+				margin: 0 15px 0 183px;
+			}
+			footer div.wrapper div#footer_sns a {
+				background-color: #222326;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50px;
+				width: 54px;
+				height: 54px;
+				margin: 0 15px 0 0;
+			}
+			footer div.wrapper div#footer_sns a i {
+				font-size: 24px;
+			}
+			footer div.wrapper div#footer_sns a i:hover {
+				color: #1ed760;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div class="wrapper">
+				<div class="logo">
+					<i class="fa fa-spotify" aria-hidden="true"></i><a href="#">Spotify</a>
+				</div>
+				<div>
+					<a href="#">프리미엄</a>
+					<a href="#">지원</a>
+					<a href="#">다운로드하기</a>
+					<a href="#" id="divider"></a>
+					<a href="#">가입하기</a>
+					<a href="#">로그인하기</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="wrapper">
+				<h1>다⁠양⁠한 해⁠외 히⁠트⁠곡⁠과 국⁠내 인⁠기 음⁠악⁠을 들⁠어⁠보⁠세⁠요</h1>
+				<h2>
+					1개의 모바일 기기에서 7일 동안 무료로 Spotify Premium 멤버십을 이용해보세요.
+					결제 세부 정보는 필요하지 않습니다.
+				</h2>
+				<div>
+					<img src="img/googlePlay.svg" alt="플레이스토어" width="155" /><img
+						src="img/apple.svg"
+						alt="앱스토어"
+						width="130"
+					/>
+				</div>
+				<p>
+					약관이 적용됩니다. Premium을 이미 이용해 보셨거나 다른 기기로 이용하시려는 경우
+					이 프로모션을 이용할 수 없습니다. 7일 후에도 계속 Spotify 서비스를 이용하려면
+					Premium을 구독해야 합니다.
+				</p>
+			</div>
+		</main>
+		<footer>
+			<div class="wrapper">
+				<div>
+					<div class="logo">
+						<i class="fa fa-spotify" aria-hidden="true"></i><a href="#">Spotify</a>
+					</div>
+					<div id="footer_menu">
+						<dl>
+							<dt>회사</dt>
+							<dd><a href="#">상세정보</a></dd>
+							<dd><a href="#">채용 정보</a></dd>
+							<dd><a href="#">For the Record</a></dd>
+						</dl>
+						<dl>
+							<dt>커뮤니티</dt>
+							<dd><a href="#">아티스트</a></dd>
+							<dd><a href="#">개발자</a></dd>
+							<dd><a href="#">투자자</a></dd>
+							<dd><a href="#">공급업체</a></dd>
+						</dl>
+						<dl>
+							<dt>유용한 링크</dt>
+							<dd><a href="#">지원</a></dd>
+							<dd><a href="#">웹 플레이어</a></dd>
+						</dl>
+					</div>
+					<div id="footer_sns">
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div>
+					<div>
+                        <a href="#">
+
+                            <i class="fa fa-globe" aria-hidden="true"></i>대한민국 (한국어)
+                        </a>
+                    </div>
+					<div>
+						<div>
+							<a href="#">법률정보</a>
+							<a href="#">개인정보 보호 센터</a>
+							<a href="#">개인정보 처리방침</a>
+						</div>
+						<div>
+							<a href="#">&copy 2022 Spotify AB</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
